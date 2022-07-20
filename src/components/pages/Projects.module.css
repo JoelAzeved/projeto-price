@@ -1,12 +1,18 @@
 .newproject {
-    width: 450px;
+    width: 550px;
     margin: 0 auto;
-    padding: 3em;;
+    padding: 3em;
+    
+
 }
-.newproject h1 {
+.newproject h2 {
+ 
     margin-bottom: 0.5em;
+    margin-left: 1.6em;
 }
 
 .newproject p {
     color: #7b7b7b;
+    
+    margin-left: 2.5em;
 }

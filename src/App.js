@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import './App.css';
 import Home from './components/pages/Home'
 import Empresa from './components/pages/Empresa'
@@ -7,6 +7,7 @@ import Container from './components/layout/Container'
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Project from './components/pages/Projects';
+import ProjectsAdicionados from './components/pages/Projects.Adicionados';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/empresa' element={<Empresa />} />
           <Route path='/contato' element={<Contato />} />
-          <Route path='/project' element={<Project />} />
+          <Route path='/projetos' element={<Project />} />
+          <Route path='/projetosadicionados' element={<ProjectsAdicionados/>} />
         </Routes>
       </Container>
 
