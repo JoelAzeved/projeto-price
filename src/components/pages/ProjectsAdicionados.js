@@ -7,7 +7,7 @@ import Loadind from '../layout/Loading'
 import LinkButton from '../layout/LinkButton'
 import ProjectCard from '../project/ProjectCard'
 
-import styles from './Projects.Adicionados.Module.css'
+import styles from './Projectsadicionados.module.css'
 
 
 
@@ -32,10 +32,9 @@ function ProjectsAdicionados() {
                         'Content-type': 'application/json',
                     }
                 })
-                .then((resp) => resp.json())
+                .then(resp => resp.json())
                 .then((data) => {
                     setProjects(data)
-                    console.log(data)
                     setRemoveLoading(true)
                 })
                 .catch((err) => console.log(err))
@@ -51,17 +50,18 @@ function ProjectsAdicionados() {
         },
         })
         .then(resp => resp.json())
-        .then(data =>{
+        .then(() => {
             setProjects(projects.filter((project)=> project.id !== id))
             setProjectMessage('Projeto removido com sucesso!')
 
         } )
+        .catch(err => console.log(err))
 
     }
 
     return (
-        <div className={styles.project_container}>
-            <div className='title_container'>
+        <div className={styles.project_container} >
+            <div className={styles.title_container} >
                 <h1>Projetos</h1>
                 <LinkButton to='/projetos' text='Criar projetos' />
             </div>
@@ -69,13 +69,13 @@ function ProjectsAdicionados() {
             {projectMessage && <Message type="error" msg={projectMessage} />}
 
             <Container customClass="start">
-                {projects.length > 0 && projects.map((projects) => (
+                {projects.length > 0 && projects.map((project) =>(
                     <ProjectCard
-                        id={projects.id}
-                        name={projects.name}
-                        budget={projects.budget}
-                        category={projects.category.name}
-                        key={projects.id}
+                        key={project.id}
+                        id={project.id}
+                        name={project.name}
+                        budget={project.budget}
+                        category={project.category.name}
                         handleRemove={removeProject}
 
                     />

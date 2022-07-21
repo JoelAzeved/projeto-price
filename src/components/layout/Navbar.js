@@ -14,7 +14,7 @@ function Navbar() {
                         <Link to='/'>Home</Link>
                     </li>
                     <li className={styles.iten}>
-                        <Link to='/projetos'>Projetos</Link>
+                        <Link to='/projetosadicionados'>Projetos</Link>
                     </li>
                     <li className={styles.iten}>
                         <Link to='/empresa'>Empresa</Link>

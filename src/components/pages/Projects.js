@@ -18,7 +18,7 @@ function Project () {
             body: JSON.stringify(project)
         })
         .then((resp)=> resp.json())
-        .then((data) => { 
+        .then(() => { 
             
             navigate('/projetosadicionados', {state:{ mensagem: ' Projeto adicionado com sucesso! '}})
             

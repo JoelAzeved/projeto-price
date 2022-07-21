@@ -7,7 +7,8 @@ import Container from './components/layout/Container'
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Project from './components/pages/Projects';
-import ProjectsAdicionados from './components/pages/Projects.Adicionados';
+import ProjectsAdicionados from './components/pages/ProjectsAdicionados';
+import ProjectEdicao from './components/pages/ProjectEdicao';
 
 function App() {
   return (
@@ -18,15 +19,15 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/empresa' element={<Empresa />} />
           <Route path='/contato' element={<Contato />} />
-          <Route path='/projetos' element={<Project />} />
+          <Route path='/projetos' element={<Project/>} />
+          <Route path='/adicionarprojetos' element={<Project/>} />
           <Route path='/projetosadicionados' element={<ProjectsAdicionados/>} />
+          <Route path='/projetosadicionados/:id' element={<ProjectEdicao/>} />
         </Routes>
       </Container>
-
       <Footer />
     </BrowserRouter>
-
-   
+  
   )
 }
 

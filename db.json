@@ -1,21 +1,55 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "name": "hhhh",
+      "budget": "15000",
+      "category": {
+        "id": "3",
+        "name": "Desenvolvimento"
+      },
+      "price": 0,
+      "service": [],
+      "id": 1
+    },
+    {
+      "name": "novo ",
+      "budget": "12000",
+      "category": {
+        "id": "3",
+        "name": "Desenvolvimento"
+      },
+      "price": 0,
+      "service": [],
+      "id": 2
+    },
+    {
+      "name": "novo 22",
+      "budget": "1350",
+      "category": {
+        "id": "2",
+        "name": "Planejamento"
+      },
+      "price": 0,
+      "service": [],
+      "id": 3
+    }
+  ],
   "categories": [
     {
       "id": 1,
-      "name": "Desenvolvimento"
+      "name": "infra"
     },
     {
       "id": 2,
-      "name": "Infra"
+      "name": "Planejamento"
     },
     {
       "id": 3,
-      "name": "Design"
+      "name": "Desenvolvimento"
     },
     {
       "id": 4,
-      "name": "Planejamento"
+      "name": "Design"
     }
   ]
 }
