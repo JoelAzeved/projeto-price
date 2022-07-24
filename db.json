@@ -1,37 +1,28 @@
 {
   "projects": [
     {
-      "name": "hhhh",
-      "budget": "15000",
+      "name": "Pierre",
+      "budget": "3000",
       "category": {
         "id": "3",
         "name": "Desenvolvimento"
       },
-      "price": 0,
-      "service": [],
-      "id": 1
-    },
-    {
-      "name": "novo ",
-      "budget": "12000",
-      "category": {
-        "id": "3",
-        "name": "Desenvolvimento"
-      },
-      "price": 0,
-      "service": [],
+      "price": null,
+      "services": [
+        {
+          "id": "2548bf0d-3e33-4dc0-9cf1-a7ad36c2714a"
+        },
+        {
+          "id": "2548bf0d-3e33-4dc0-9cf1-a7ad36c2714a"
+        },
+        {
+          "id": "a722bbfa-1be6-4674-9a30-c03fe5852306",
+          "name": "jj",
+          "price": "98",
+          "description": "e isso nao sei"
+        }
+      ],
       "id": 2
-    },
-    {
-      "name": "novo 22",
-      "budget": "1350",
-      "category": {
-        "id": "2",
-        "name": "Planejamento"
-      },
-      "price": 0,
-      "service": [],
-      "id": 3
     }
   ],
   "categories": [

@@ -42,6 +42,7 @@ function ProjectsAdicionados() {
     }, [])
 
     function removeProject(id) {
+        setProjectMessage('')
 
         fetch(`http://localhost:5000/projects/${id}`,{
         method: 'DELETE',
@@ -69,14 +70,17 @@ function ProjectsAdicionados() {
             {projectMessage && <Message type="error" msg={projectMessage} />}
 
             <Container customClass="start">
-                {projects.length > 0 && projects.map((project) =>(
+                {projects.length > 0 && projects.map((project)=>(
+                    
                     <ProjectCard
-                        key={project.id}
-                        id={project.id}
+                      
                         name={project.name}
                         budget={project.budget}
                         category={project.category.name}
                         handleRemove={removeProject}
+                        key={project.id}
+                        id={project.id}
+                        
 
                     />
                 ))}
