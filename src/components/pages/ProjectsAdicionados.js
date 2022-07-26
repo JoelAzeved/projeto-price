@@ -2,7 +2,6 @@ import { useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
 import Message from '../layout/Mensagem'
-import Container from '../layout/Container'
 import Loadind from '../layout/Loading'
 import LinkButton from '../layout/LinkButton'
 import ProjectCard from '../project/ProjectCard'
@@ -68,28 +67,26 @@ function ProjectsAdicionados() {
             </div>
             {mensagem && <Message type="sucess" msg={mensagem} />}
             {projectMessage && <Message type="error" msg={projectMessage} />}
-
-            <Container customClass="start">
-                {projects.length > 0 && projects.map((project)=>(
+                <div className={styles.container}>
+                    {projects.length > 0 && projects.map((project)=>(
                     
-                    <ProjectCard
-                      
-                        name={project.name}
-                        budget={project.budget}
-                        category={project.category.name}
-                        handleRemove={removeProject}
-                        key={project.id}
-                        id={project.id}
-                        
-
-                    />
-                ))}
-                {!removeLoading && <Loadind />}
-
-                {removeLoading && projects.length === 0 &&
-                    <p> Não há projetos cadastrados</p>
-                }
-            </Container>
+                        <ProjectCard
+                    
+                            name={project.name}
+                            budget={project.budget}
+                            category={project.category.name}
+                            handleRemove={removeProject}
+                            key={project.id}
+                            id={project.id}
+                    
+                        />
+                    ))}
+                    {!removeLoading && <Loadind />}
+                    {removeLoading && projects.length === 0 &&
+                        <p> Não há projetos cadastrados</p>
+                    }
+                </div>
+           
         </div>
     )
 }

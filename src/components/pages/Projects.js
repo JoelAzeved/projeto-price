@@ -2,15 +2,23 @@ import styles from './Projects.module.css'
 import ProjectForm from '../project/ProjectForm'
 import {useNavigate} from 'react-router-dom'
 
+
+
 function Project () {
 
     const navigate = useNavigate()
+    
+  
 
     function CreatePost(project) {
         
-        project.price = 0
-        project.services = []
-
+        if(Object.values(project).length === 0){
+            alert('Insira os valores nos campos!')
+            
+        }else {
+     
+        
+ 
         fetch("http://localhost:5000/projects",{
             method: "POST",
             headers: {
@@ -25,8 +33,8 @@ function Project () {
             
         })
         .catch((e) => console.log(e))
-
     }
+}
 
     return(
         <div className={styles.newproject}>

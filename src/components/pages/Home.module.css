@@ -5,15 +5,18 @@
     align-items: center;
     justify-content: center;
     padding: 0.4em;
+   
+   
 }
 .home_container img{
-    width: 30%;
     margin: 1.5em 0;
+    width: 25%;
 }
 
 .home_container h2 {
     font-size: 2.5em;
     margin-bottom: .5em;
+   
 }
 .home_container h2 span {
     color: #f7c258;
@@ -24,3 +27,4 @@
     margin-bottom: 1.5em;
     color: #7b7b7b;
 }
+

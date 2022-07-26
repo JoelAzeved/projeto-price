@@ -6,23 +6,27 @@
       "category": {
         "id": "3",
         "name": "Desenvolvimento"
+      }
+    },
+    {
+      "name": "novo atualizado 2",
+      "budget": "2500",
+      "category": {
+        "id": "4",
+        "name": "Design"
       },
-      "price": null,
-      "services": [
-        {
-          "id": "2548bf0d-3e33-4dc0-9cf1-a7ad36c2714a"
-        },
-        {
-          "id": "2548bf0d-3e33-4dc0-9cf1-a7ad36c2714a"
-        },
-        {
-          "id": "a722bbfa-1be6-4674-9a30-c03fe5852306",
-          "name": "jj",
-          "price": "98",
-          "description": "e isso nao sei"
-        }
-      ],
-      "id": 2
+      "price": 0,
+      "services": [],
+      "id": 3
+    },
+    {
+      "name": "novo atualizado 2",
+      "budget": "55555",
+      "category": {
+        "id": "2",
+        "name": "Planejamento"
+      },
+      "id": 4
     }
   ],
   "categories": [
